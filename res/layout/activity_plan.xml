@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.travelinsingapore.PlanActivity">
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:id="@+id/text"
+            android:text="Choose the place that you plan to travel"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+    <CheckBox
+        android:id="@+id/MBS"
+        android:defaultValue="false"
+        android:textColor="?android:textColorPrimary"
+        android:text="Marina Bay Sands"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"/>
+    <CheckBox
+        android:id="@+id/SF"
+        android:defaultValue="false"
+        android:textColor="?android:textColorPrimary"
+        android:text="Singapore Flyer"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/MBS"/>
+    <CheckBox
+        android:id="@+id/VC"
+        android:defaultValue="false"
+        android:textColor="?android:textColorPrimary"
+        android:text="Vivo City"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SF"/>
+    <CheckBox
+        android:id="@+id/RWS"
+        android:defaultValue="false"
+        android:textColor="?android:textColorPrimary"
+        android:text="Resorts World Sentosa"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VC"/>
+    <CheckBox
+        android:id="@+id/BTRC"
+        android:defaultValue="false"
+        android:textColor="?android:textColorPrimary"
+        android:text="Buddha Tooth Relic Temple"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RWS"/>
+    <CheckBox
+        android:id="@+id/Z"
+        android:defaultValue="false"
+        android:textColor="?android:textColorPrimary"
+        android:text="Zoo"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BTRC"/>
+
+        <Button
+            android:id="@+id/clicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan my route"
+            android:layout_marginBottom="8dp"
+            style="@style/bstyle"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/ybudget"
+            android:text="Enter your budget here: "
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Z"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/budget"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:inputType="numberDecimal"
+            android:hint="Your budget"
+            android:textSize="15dp"
+            android:textColorHint="?android:textColorSecondary"
+            android:layout_below="@+id/ybudget"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/navigation"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="NightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/dark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="buttonStyle">@style/bstyle</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/nighttextprimary</item>
+        <item name="android:textColorSecondary">@color/nighttextsecondary</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="buttonStyle">@style/bstyle</item>
+        <item name="android:textColor">@color/dark</item>
+        <item name="android:textColorPrimary">@color/textprimary</item>
+        <item name="android:textColorSecondary">@color/textsecondary</item>
+    </style>
+
+    <style name="bstyle" parent="android:Widget.DeviceDefault.Button">
+        <item name="android:background">@drawable/button</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

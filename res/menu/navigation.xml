@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:actionLayout="@layout/activity_main"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/navigation_plan"
+        android:icon="@drawable/ic_timeline_black_24dp"
+        android:title="Plan"/>
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_dehaze_black_24dp"
+        android:title="More"/>
+
+
+
+</menu>
